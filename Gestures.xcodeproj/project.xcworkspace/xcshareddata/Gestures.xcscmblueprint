@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0E3E993A3E448E96605B72A245346E5DD3D674CF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "995A63F00B2969FDC3B570C13AF01CC5DAC7707F" : 9223372036854775807,
+    "3B254D99F8C971C11F04DE1004DE22FB9C2EB74D" : 9223372036854775807,
+    "0E3E993A3E448E96605B72A245346E5DD3D674CF" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ADC884E3-B9EB-4258-86A7-25F08E38C209",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "995A63F00B2969FDC3B570C13AF01CC5DAC7707F" : "Gestures\/Gestures\/TabbarImages\/",
+    "3B254D99F8C971C11F04DE1004DE22FB9C2EB74D" : "..",
+    "0E3E993A3E448E96605B72A245346E5DD3D674CF" : "Gestures\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Gestures",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Gestures.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/abear247\/Gestures.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0E3E993A3E448E96605B72A245346E5DD3D674CF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/abear247\/Patient-Doctor.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3B254D99F8C971C11F04DE1004DE22FB9C2EB74D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/abear247\/TabbarImages.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "995A63F00B2969FDC3B570C13AF01CC5DAC7707F"
+    }
+  ]
+}

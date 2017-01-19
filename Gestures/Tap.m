@@ -14,24 +14,27 @@
 
 @implementation Tap
 
-- (void)viewDidLoad {
+-(void)viewDidLoad{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    CGFloat width = 100;
+    CGFloat height = 100;
+    
+    CGRect frame = CGRectMake(CGRectGetMidX(self.view.bounds) - height/2, CGRectGetMidY(self.view.bounds) - width/2, 100, 100);
+    
+    UIView *boxView = [[UIView alloc] initWithFrame:frame];
+    boxView.backgroundColor = [UIColor blueColor];
+    
+    [self.view addSubview:boxView];
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
+    [boxView addGestureRecognizer:tapGesture];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)tap:(UITapGestureRecognizer *)sender{
+    UIColor *colour = [sender.view.backgroundColor isEqual:[UIColor blueColor]] ? [UIColor redColor] : [UIColor blueColor];
+    sender.view.backgroundColor = colour;
 }
-*/
 
 @end

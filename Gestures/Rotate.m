@@ -1,21 +1,22 @@
 //
-//  Pinch.m
+//  Rotate.m
 //  Gestures
 //
 //  Created by Alex Bearinger on 2017-01-19.
 //  Copyright © 2017 Alex Bearinger. All rights reserved.
 //
 
-#import "Pinch.h"
+#import "Rotate.h"
 
-@interface Pinch ()
+@interface Rotate ()
 
 @end
 
-@implementation Pinch
+@implementation Rotate
 
--(void)viewDidLoad{
+- (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
     CGFloat width = 100;
     CGFloat height = 100;
     CGRect frame = CGRectMake(CGRectGetMidX(self.view.bounds) - height/2, CGRectGetMidY(self.view.bounds) - width/2, width, height);
@@ -23,14 +24,15 @@
     view.backgroundColor = [UIColor purpleColor];
     [self.view addSubview:view];
     
-    UIPinchGestureRecognizer *pinchGesture = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(viewPinched:)];
-    [view addGestureRecognizer:pinchGesture];
+    UIRotationGestureRecognizer *rotate = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(rotateBox:)];
+    [view addGestureRecognizer:rotate];
+    
 }
 
--(void)viewPinched:(UIPinchGestureRecognizer *)sender{
-    CGFloat scale = sender.scale;
-    sender.view.transform = CGAffineTransformMakeScale(scale, scale);
-    scale = 1.0;
+-(void)rotateBox:(UIRotationGestureRecognizer *)sender{
+    sender.view.transform = CGAffineTransformMakeRotation(sender.rotation);
+
 }
+
 
 @end
